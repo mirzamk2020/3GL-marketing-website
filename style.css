@@ -72,10 +72,17 @@ nav {
 }
 
 .presentation {
+  padding: 2px 25px;
   display: block;
   width: 40%;
   margin: auto;
   min-height: 80vh;
+}
+
+.values {
+  padding-left: 3rem;
+  font-size: 1.3rem;
+  font-weight: 200;
 }
 
 .cover-container {
@@ -166,6 +173,12 @@ nav {
   .intro-cover {
     width: auto;
     height: auto;
+  }
+  .values {
+    padding-left: 0;
+    margin-left: 0;
+    padding-top: 1rem;
+    font-size: 1.15rem;
   }
 }
 
