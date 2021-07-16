@@ -1,0 +1,183 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.button {
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+header {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  height: 10vh;
+  align-items: center;
+}
+
+nav {
+  flex: 2;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-family: "Encode Sans SC", sans-serif;
+  text-decoration: none;
+  color: rgb(63, 62, 62);
+  font-size: 22px;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid rgb(75, 74, 74);
+  color: #706e70;
+}
+
+.nav-container {
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 010px 0px 010px 0px;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-family: "Alfa Slab One", cursive;
+  margin-left: 30px;
+}
+
+.logo-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #000;
+}
+
+.presentation {
+  display: block;
+  width: 50%;
+  margin: auto;
+  min-height: 80vh;
+}
+
+.cover {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+}
+.cover img {
+  width: 60%;
+  height: 100%;
+  border-radius: 2px;
+  filter: drop-shadow(0px 2px 3px rgb(70, 69, 69));
+}
+
+.intro {
+  padding: 5px;
+  background-color: rgb(226, 228, 229);
+  display: block;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+}
+
+.intro-cover {
+  margin-top: auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+.intro-cover img {
+  width: 95%;
+  height: 90%;
+  border-radius: 2px;
+  filter: drop-shadow(0px 2px 3px rgb(70, 69, 69));
+}
+
+.intro p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.sub-content {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.abt-title h2 {
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Encode Sans SC", sans-serif;
+}
+
+.title {
+  font-family: "Encode Sans SC", sans-serif;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-family: "Encode Sans SC", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content {
+  display: block;
+  width: 80%;
+  margin: auto;
+  min-height: 80vh;
+}
+
+footer @media screen and (max-width: 1024px) {
+  body {
+    padding-top: 65px;
+  }
+  .cover {
+    width: auto;
+    height: auto;
+  }
+  .intro-cover {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    padding-top: 85px;
+  }
+  header {
+    width: 100%;
+    margin-top: 0;
+    height: 0%;
+  }
+  nav {
+    width: 100%;
+  }
+  .presentation {
+    width: auto;
+  }
+}

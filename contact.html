@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./img/favicon-96x96.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/mdbootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css" />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact - The 3GL Corp.</title>
+  </head>
+
+  <body class="bg-light mt-2">
+    <!-- Navbar -->
+    <header>
+      <nav
+        class="
+          navbar navbar-light navbar-expand-lg
+          bg-white
+          fixed-top
+          nav-container
+        "
+      >
+        <div class="navbar-brand" href="#">
+          <a class="logo-link" href="index.html">3GL</a>
+        </div>
+        <button
+          class="navbar-toggler custom-toggler mr-2"
+          data-toggle="collapse"
+          data-target="#navLinks"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+          <ul class="navbar-nav ml-auto mr-2">
+            <li class="nav-item mr-2">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link" href="expertise.html">Expertise</a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link" href="purpose.html">Purpose and Values</a>
+            </li>
+            <li class="nav-item active mr-2">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contact Form -->
+    <!--Section: Contact v.2-->
+    <section class="mb-4">
+      <!--heading-->
+      <h2 class="title text-center my-4">Contact us</h2>
+      <!--description-->
+      <div class="title text-center px-5">
+        <p class="lead w-responsive px-5 mb-5">
+          Do you have any questions about the 3GL coroporation? Please do not
+          hesitate to contact us directly. Our team will come back to you within
+          a matter of hours to help you.
+        </p>
+      </div>
+
+      <div class="d-flex justify-content-center content">
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-9 mb-md-0 mb-5">
+            <form
+              id="contact-form"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="hidden d-none invisible">
+                <label
+                  >Don’t fill this out if you’re human: <input name="bot-field"
+                /></label>
+              </p>
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-md-12 my-3">
+                  <div class="md-form mb-0">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your Name"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-12 my-3">
+                  <div class="md-form mb-0">
+                    <input
+                      type="text"
+                      id="email"
+                      name="email"
+                      placeholder="Your Email"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row my-3">
+                <!--Grid column-->
+                <div class="col-md-12">
+                  <div class="md-form">
+                    <textarea
+                      type="text"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      placeholder="Message"
+                      class="form-control lg-textarea"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <!--Grid row-->
+            </form>
+
+            <div class="d-flex justify-content-center">
+              <a
+                href="contact.html"
+                class="
+                  btn btn-lg btn-outline-dark
+                  text-center
+                  my-4
+                  font-weight-bold
+                  button
+                "
+                onclick="document.getElementById('contact-form').submit();"
+                >Send</a
+              >
+            </div>
+            <div class="status"></div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+              <li>
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <p>Chicago, IL 60625, USA</p>
+              </li>
+
+              <li>
+                <i class="fas fa-phone mt-4 fa-2x"></i>
+                <p>+1 773-567-1111</p>
+              </li>
+
+              <li>
+                <i class="fas fa-envelope mt-4 fa-2x"></i>
+                <p>contact@3gl.com</p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark height-50">
+      <div class="sub-content title text-white py-3 display-5">
+        © 2021 3GL Corporation, LLC
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
